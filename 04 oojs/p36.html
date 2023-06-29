@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMASCRIPT</title>
+</head>
+<body>
+    <h1> Getters and Setters</h1>
+   
+    <script>
+        class Card {
+            constructor(){
+                this.number = '';
+                
+            }
+            set cardNum(val){
+                this.number = val;
+            }
+            get cardNum(){
+                return this.number;
+            }
+           
+        }
+        let x = new Card();
+        x.cardNum = '0009 45367 873738 79794'
+        document.write(`<h1> First card = ${x.cardNum} </h1>`);
+    </script>
+</body>
+</html>

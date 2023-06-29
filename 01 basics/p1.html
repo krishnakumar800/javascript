@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> varaible input </h2>
+    <script>
+        var x = 123; // number
+        var p  = 123.33; // number
+        var x = 12e4; // number
+        var x1 = true; // boolean
+
+        //object
+        var user = {
+           name : "pranav",
+           email : "pranav12@gmaul.com",
+           age : 23,
+           isAdmin : false,
+           hobbies  : ['riding', 'trecking', 'driving']
+
+
+        };
+
+        //array
+        var num = [123,333,455,666];
+
+        document.write("<h1>" + x + "</h1>");
+        document.write(`<h1> ${x} </h1>`);
+
+       document.write(`<h1> ${num[2]} </h1>`); // array index
+       document.write (`<h1> ${num} <h1>`); // array
+
+        document.write(`<h1> ${user.name} <h1>`);
+
+        document.write(`<h1> ${user['email']} </h1>`);
+
+        console.log('user = ', user);
+    </script>
+    
+</body>
+</html>

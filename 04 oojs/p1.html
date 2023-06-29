@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oojs</title>
+</head>
+<body>
+    <h2>Object</h2>
+
+    <script>
+        var x = 23;
+
+       var car = {
+        model : 2023,
+        brand : "Thar",
+        color : "red",
+        company : "mahindra",
+        isRunnable : true,
+        speed : () => {
+            return "22kms max speed";
+        }
+        
+
+       };
+
+       console.log('car = ',car);
+
+       document.write(`<h1> var x = ${x} <h1>`);
+       document.write(`<h1> object = ${car} </h1>`); // object Object
+
+       document.write(`<h1> model = ${car.model} <h1>`);
+       document.write(`<h1> model = ${car.brand} <h1>`);
+
+        document.write(`<h1> company = ${car.company} <h1>`);
+        document.write(`<h1> speed = ${car.speed()} <h1>`);
+        document.write(`<h1> model = ${car.color} <h1>`);
+
+
+
+
+       
+        
+    </script>
+    
+</body>
+</html>

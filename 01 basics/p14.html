@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> array using constructor function</h2>
+
+    <script>
+        var users = new Array(); // array()-> array constructor function
+
+        console.log('array before assignment',users);
+
+        users[0]= "pranav";
+        users[1] = "sony";
+        users[2] = "kranthi";
+        users[3] = "umesh";
+
+        console.log('array after assignment',users);
+
+        var i = 0;
+         
+        do {
+            document.write(`<h1> ${users[i]} </h1>`);
+            i++;
+        } while (i< users.length);
+
+       
+      
+    </script>
+    
+</body>
+</html>

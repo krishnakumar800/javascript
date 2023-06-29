@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Print Alphabetical characters</h3>
+
+    <script>
+        // A-65 to Z-90
+        for(var i = 65 ; i<=90 ; i++){
+            document.write(`<span> ${String.fromCharCode(i)} </span>`);
+        } 
+
+        // a-97 to z-122
+        for(var i = 97 ; i<=122;i++){
+            document.write(`<span> ${String.fromCharCode(i)} </span>`);
+        }
+        document.write(`<br>`);
+        
+
+        for(var i = 65 ; i<=69;i++){
+            for(var j = 65 ;j<=i;j++){
+                document.write(`<span> ${String.fromCharCode(j)} </span>`);
+            }
+            document.write(`<br>`);
+        }
+
+        for(var i = 97 ; i<=101;i++){
+            for(j = 97;j<=i;j++){
+                document.write(`<span> ${String.fromCharCode(j)} </span>`);
+            }
+            document.write(`<br>`);
+        }
+            
+          
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oojs</title>
+</head>
+<body>
+    <h1>Prototype keyword => it is used to create property to an constructor externally</h1>
+
+
+    <script>
+        function User(){
+            this.name = "manu";
+            this.getName = function(){
+                document.write(`<h1> my name is ${this.name}</h1>`);
+            }
+        }
+
+        // constructor.prototype.property = value;
+        User.prototype.email = "manu12@gmail.com";
+        User.prototype.getEmail = () => {
+            document.write(`<h1> my email is ${this.email} </h1>`);
+        }
+        
+        let x = new User();
+        
+        console.log('user instance = ',x);
+        document.write(`<h1> name = ${x.name} </h1>`);
+        document.write(`<h1> email = ${x.email} </h1>`);
+        
+
+
+        x.getEmail();
+        x.getName();
+
+
+
+    </script>
+    
+</body>
+</html>

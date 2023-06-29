@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object.defineProperties</h1>
+
+    <script>
+        var user = {
+            name : "krishna"
+        };
+        Object.defineProperties(user , {
+            email : {
+                value : "kkroyroyal12@gmail.com"
+            },
+            mobile : {
+                value : '12345678'
+            },
+            age : {
+                value : 30
+            }
+        });
+
+        console.log('after user',user);
+
+        document.write(`<h1> name = ${user.name} </h1>`);
+        
+        document.write(`<h1> email = ${user.email} </h1>`);
+
+        
+        document.write(`<h1> mobile = ${user.mobile} </h1>`);
+
+        
+        document.write(`<h1> age = ${user.age} </h1>`);
+
+
+
+    </script>
+    
+</body>
+</html>

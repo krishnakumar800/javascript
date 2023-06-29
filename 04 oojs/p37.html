@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMASCRIPT</title>
+</head>
+<body>
+    <h1>Private members inside the class (Encapsulation)</h1>
+    <script>
+        class Company{
+            constructor(){
+                const emp = [];
+
+                this.addEmp = function(val){
+                    emp.push(val);
+                    return emp;
+                }
+                this.getEmp = function(){
+                    return emp.shift();
+                }
+            }
+        }
+
+        let x = new Company();
+
+        x.addEmp('john');
+        x.addEmp('krishna');
+        x.addEmp('raju');
+
+
+        console.log('first = ', x.getEmp())
+        console.log('second = ', x.getEmp())
+        console.log('third = ', x.getEmp())
+    </script>
+ 
+    
+</body>
+</html>

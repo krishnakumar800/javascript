@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMASCRIPT</title>
+</head>
+<body>
+    <script>
+        class Course {
+            constructor(){
+                document.write(`<h3> this is constructor called </h3>`);
+                this.title = title;
+                this.duration = dur;
+            }
+            //static method
+            static print(val){
+                document.write(`<h1> this is static method </h1>`);
+                document.write(`<h1> property title is = ${this.title} </h1>`);
+                document.write(`<h1> parameter title  = ${val} </h1>`);
+
+            }
+            
+            // non static method
+
+            CourseInfo(){
+                document.write(`<h1> ${this.title} ${this.duration} </h1`);
+            }
+
+            
+        }
+
+        Course.print('Be-practical');
+
+        let x = new Course('javascript','1 month');
+        x.CourseInfo();
+    </script>
+    
+</body>
+</html>

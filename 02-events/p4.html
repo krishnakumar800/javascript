@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: teal;
+            color: aliceblue;
+            padding: 12px;
+            width: 50%;
+            height: 500px;
+            overflow: auto;
+        }
+        h4{
+            padding: 10px;
+            background-color: crimson;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h3>onmousewheel</h3>
+
+    <h4 id="output"></h4>
+
+    <div id="txt" onmousewheel="wheelHandler()" onscroll="wheelHandler()">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam beatae eaque alias debitis quae quidem laboriosam velit aliquid pariatur molestias eius temporibus veritatis ipsa cumque tempora ad, vitae laborum quod!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus odio quidem, perspiciatis obcaecati magnam optio cum minus exercitationem, maiores eaque modi, ea quaerat atque vitae eos vero enim voluptatum maxime.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fugit, blanditiis dicta recusandae voluptas quasi inventore. Maiores qui sed cumque officia non rerum, odit nostrum velit vel, rem eos provident.</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus dolorem placeat ipsam aperiam culpa hic debitis, odio ullam, eaque numquam ad explicabo odit ex et iste? Dolore autem unde assumenda.</p>
+
+    </div>
+    <script>
+        function wheelHandler(){
+            document.getElementById("output").innerHTML = document.getElementById("txt").scrollTop + "px";
+        }
+    </script>
+    
+</body>
+</html>

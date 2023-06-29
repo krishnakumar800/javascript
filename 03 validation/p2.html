@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+</head>
+<body>
+   <center> 
+        <h1>Email Validation</h1>
+    </center>
+    <hr>
+    <form autocomplete="off">
+        <label>Email Id</label>
+        <input type="email" name="email" id="email" onkeyup="validate()">
+        <strong id="status"></strong>
+        
+    </form>
+   
+
+    <script>
+        function  validate(){
+            let email = document.getElementById("email").value;
+            let status = document.getElementById("status");
+
+            console.log("Email =",email);
+
+                if (email.length ==0){
+                    status.innerHTML = "Enter valid email";
+                    status.style.color ="blue";
+                }else if(email.length <=5){
+                    status.innerHTML = `User input length must be greater than 5 characters`;
+                    status.style.color = "blue"
+                }  else if (email.length > 5){
+                    status.innerText = `valid id`;
+                    status.style.color = "blue"
+
+                }
+
+        }
+    </script>
+    
+</body>
+</html>

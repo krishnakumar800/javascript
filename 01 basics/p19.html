@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Nested loops</h3>
+    <p> Write a program to print a pattern</p>
+    <p>
+        <pre>
+            1 
+            1  2 
+            1  2  3
+            1  2  3  4
+            1  2  3  4  5
+        </pre>
+
+
+    </p>
+    <script>
+        for(var i = 0 ; i <=5;i++){
+            document.write(`<strong> rows = ${i} </strong> `);
+            for(var j = 0; j<=i;j++){
+                document.write(`<span> columns = ${j} </span> `);
+            }
+            document.write(`<br>`);
+        }
+    </script>
+    
+</body>
+</html>

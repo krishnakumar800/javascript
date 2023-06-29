@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMASCRIPT</title>
+</head>
+<body>
+    <h1>Super key</h1>
+    <script>
+        class Company {
+            constructor(x,y){
+                this.empId = x;
+                this.empDes = y;
+            }
+            getEmpInfo(){
+                return ` employee id = ${this.empId} and designation = ${this.empDes}`;
+            }
+
+        }
+        class Emp extends Company {
+            constructor(na,em,id,de){
+                super(id,de);
+                this.name = na;
+                this.email = em;
+            }
+            getEmpInfo(){
+                document.write(`<h1> ${super.getEmpInfo()} </h1>`);
+                return ` name = ${this.name} and email = ${this.email}`;
+            }
+        
+            
+        }
+        let x = new Emp ("pranav","pranav12@gmail.com",123,"software developer");
+         document.write(`<h1> ${x.getEmpInfo()} </h1>`);
+    </script>
+    
+</body>
+</html>

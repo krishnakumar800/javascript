@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-EVENTS</title>
+</head>
+
+<body>
+    <video src="assets/media/yt1s.com - Oh Sita Hey Rama Video Song  Sita Ramam Telugu  Dulquer  Vishal  Hanu Raghavapudi.mp4" height="200" id="videoFile"></video>
+    <hr>
+    <button onclick="playHandler()">play</button>
+    <button onclick="pauseHandler()">pause</button>
+    <button onclick="fullscreen()">fullscreen</button>
+
+    <script>
+        function playHandler(){
+            document.getElementById("videoFile").play();
+        }
+        function pauseHandler(){
+            document.getElementById("videoFile").pause();
+        }
+        function fullscreen(){
+            document.getElementById("videoFile").requestFullscreen();
+        }
+    </script>
+</body>
+</html>

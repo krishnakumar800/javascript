@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> write a program to sort 3 numbers 0 ,-1 ,5</h2>
+
+    <script>
+        
+        var x = Number(prompt('Enter the value of x'));
+        var y = Number(prompt('Enter the value of y'));
+        var z = Number(prompt('Enter the value of x'));
+
+        if(x>y && x>z){
+            if(y>z){
+                console.log(`${x} , ${y} , ${z}`);
+            }else{
+                console.log(`${x} ,${z} , ${y}`);                 
+                
+
+            }
+        }
+
+        else if( y>x && y>z){
+            if(x>z){
+                console.log(`${y} ,${x} , ${z}`);
+            }else {
+                console.log(` ${y} , ${z}, ${x}`);
+            }
+        }
+
+        
+    </script>
+    
+</body>
+</html>

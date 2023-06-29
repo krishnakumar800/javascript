@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oojs</title>
+</head>
+<body>
+    <h1>Entries to object conversion</h1>
+
+    <script>
+        const userEntry = new Map([
+            ['name','krishna'],
+            ['email','kkroyroyal122@gmail.com'],
+            ['age',23]
+        ]);
+        console.log('entries =',userEntry);
+
+        //convert entries to object
+
+        const userObject = Object.fromEntries(userEntry);
+
+        console.log('object user = ' ,userObject);
+    </script>
+    
+</body>
+</html>

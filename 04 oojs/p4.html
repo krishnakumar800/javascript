@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+      th{
+        background-color: #000;
+        color: #fff;
+      }
+        table,tr,th,td{
+             border: 2px solid black; 
+             border-collapse: collapse; 
+             padding: 10px;
+        }
+       
+    </style>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+            var empDetails=[
+                { 
+                  EMPID :1,
+                  firstName:"krishna",
+                  lastName:"kumar",
+                  fullName:function(){
+                    return this.firstName+" "+this.lastName;
+                  },
+                  photo:"Assets/images/image1.jpg",
+                  mobile:[6303608197,9908592561],
+                  address:{"local":"hyderabad","per":"telangana"},
+                  pinCode:"530032",
+                  options:"<button>Edit</button> <button>delete</button>",
+                },
+
+                {
+                  EMPID:2,
+                  firstName:"umesh",
+                  lastName:"chandra",
+                  fullName:function(){
+                    return this.firstName+" "+this.lastName
+                  },
+                  photo:"assets/images/image1.jpg",
+                  mobile:[8354678780,6787889090],
+                  address:{"local":"mumbai","per":"maharashtra"},
+                  pinCode:"400002",
+                  options:"<button>edit</button> <button>delete</button>"
+                },
+
+                { 
+                  EMPID:3,
+                  firstName:"kranthi",
+                  lastName:"kumar",
+                  fullName:function(){
+                    return this.firstName+" "+this.lastName
+                  },
+                  
+                  photo:"assets/images/image1.jpg",
+                  mobile:[7702678294,8877665566],
+                  address:{"local":"kochi","per":"kerala"},
+                  pinCode:"605036",
+                  options:"<button>edit</button> <button>delete</button>"
+                },
+
+                {
+                   EMPID:4,
+                   firstName:"subba",
+                   lastName:"rayudu",
+                   fullName:function(){
+                    return this.firstName+" "+this.lastName
+                  },
+                   photo:"assets/images/image1.jpg",
+                   mobile:[9090909870,4362786890],
+                   address:   {"local":"mumbai","per":"maharashtra"},
+                   pinCode:"400004",
+                   options:"<button>edit</button> <button>delete</button>"
+                  },
+
+
+                {
+                  EMPID:5,
+                  firstName:"pooja",
+                  lastName:"chiremath",
+                  fullName:function(){
+                    return this.firstName+" "+this.lastName
+                  },
+                  photo:"assets/images/image1.jpg",
+                  mobile:[6767673456,9098978909],
+                  address:{"local":"Hyderabad","per":"telangana"},
+                  pinCode:"500032",
+                  options:"<button>edit</button> <button>delete</button>"
+                },
+
+                { 
+                  EMPID:6,
+                  firstName:"virat",
+                  lastName:"kohli",
+                  fullName:function(){
+                    return this.firstName+" "+this.lastName
+                  },
+                  photo:"assets/images/image1.jpg",
+                  mobile:[7878980990,3426272675],
+                  address:{"local":"bangalore","per":"karnataka"},
+                  pinCode:"518222",
+                  options:"<button>edit</button> <button>delete</button>"
+                },
+
+                {
+                   EMPID:7,
+                   firstName:"rana",
+                   lastName:"daggubati",
+                   fullName:function(){
+                    return this.firstName+" "+this.lastName
+                  },
+                   photo:"assets/images/image1.jpg",
+                   mobile:[6345256379,63526729809],
+                   address:  {"local":"mumbai","per":"maharashtra"},
+                   pinCode:"400001",
+                   options:"<button>edit</button> <button>delete</button>"
+                },
+
+                {
+                  EMPID:8,
+                  firstName:"pavan",
+                  lastName:"kumar",
+                  fullName:function(){
+                    return this.firstName+" "+this.lastName
+                  },
+                  photo:"assets/images/image1.jpg",
+                  mobile:[9898976759,6345362739],
+                  address:{"local":"mumbai","per":"mumbai"},
+                  pinCode:"400002",
+                  options:"<button>edit</button> <button>delete</button>"
+                },
+
+                { 
+                  EMPID:9,
+                  firstName:"ms",
+                  lastName:"dhoni",
+                  fullName:function(){
+                    return this.firstName+" "+this.lastName
+                  },
+                  photo:"assets/images/image1.jpg",
+                  mobile:[7889456342,8354628229],
+                  address:{"local":"thiruvanthapur","per":"kerala"},
+                  pinCode:"605036",
+                  options:"<button>edit</button> <button>delete</button>"
+                },
+
+                { 
+                  EMPID:10,
+                  firstName:"pavitra",
+                  lastName:"naresh",
+                  fullName:function(){
+                    return this.firstName+" "+this.lastName
+                  },
+                  photo:"assets/images/image1.jpg",
+                  mobile:[2346622780,7345690989],
+                  address:{"local":"tamilnadu","per":"chennai"},
+                  pinCode:"600001",
+                  options:"<button>edit</button> <button>delete</button>"
+                },
+     ]
+
+            var dataDetails="<table>" 
+                dataDetails+="<tr>"
+                        dataDetails+='<th> EMP ID </th>'
+                        dataDetails+='<th> first Name </th>'
+                        dataDetails+='<th> last Name </th>'
+                        dataDetails+='<th> full Name </th>'
+                        dataDetails+='<th> mobile </th>'
+                        dataDetails+='<th> alternate mobile </th>'
+                        dataDetails+='<th> local address </th>'
+                        dataDetails+='<th> per address </th>'
+                        dataDetails+='<th> pinCode </th>'
+                        dataDetails+='<th> image </th>'
+                        dataDetails+='<th> options </th>'
+                dataDetails+="</tr>"
+
+                for(var i=0;i<empDetails.length; i++){
+                    dataDetails+="<tr>"
+                        dataDetails+="<td >"+empDetails[i].EMPID +"</td>"
+                        dataDetails+="<td>"+empDetails[i].firstName +"</td>"
+                        dataDetails+="<td>"+empDetails[i].lastName +"</td>"
+                        dataDetails+="<td>"+empDetails[i].fullName() +"</td>"
+                        dataDetails+="<td>"+empDetails[i].mobile[0] +"</td>"
+                        dataDetails+="<td>"+empDetails[i].mobile[1]+"</td>"
+                        dataDetails+="<td>"+empDetails[i].address.local+"</td>"   
+                        dataDetails+="<td>"+empDetails[i].address.per+"</td>"
+                        dataDetails+="<td>"+empDetails[i].pinCode+"</td>"
+                        dataDetails+="<td>"+`<img src=${empDetails[i].photo} height=150 width=150>`+"</td>"
+                        dataDetails+="<td>"+empDetails[i].options+"</td>"
+                      
+                        
+                    dataDetails+="</tr>"
+                }
+                document.getElementById("demo").innerHTML=dataDetails;
+    </script>
+</body>
+</html>

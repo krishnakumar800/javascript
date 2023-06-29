@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOJS</title>
+</head>
+<body>
+    <h1> class ES-6</h1>
+
+    <script>
+        class User {
+            constructor(){
+                this.name = "sharanya";
+                this.email = "sharanya@gmail.com";
+                this.age = 23;
+                this.isAdmin = true;
+                this.hobbies = ['sleeping','cycling','playing'];
+                this.account = {
+                    bank : "SBI",
+                    accNo : 123344
+                }
+            }
+
+            getUserInfo(){
+                return this.name;
+            }
+            getEmail(){
+                document.write(`<h1> my email is ${this.email} <h1>`);
+            }
+        }
+
+        let x = new User();
+        console.log('x = ',x);
+        document.write(`<h1> name = ${x.name} <h1>`);
+            document.write(`<h1> email = ${x.name} <h1>`);
+                document.write(`<h1> age = ${x.name} <h1>`);
+                     document.write(`<h1> isAdmin = ${x.name} <h1>`);
+                        document.write(`<h1>  bank name = ${x.name} <h1>`);
+
+        x.hobbies.forEach(function(hobby,index){
+            document.write(`<h1> hobbies : ${hobby} : ${index} </h1>`);
+        })
+
+        x.getEmail();
+        document.write(`<h1> method getUserInfo = ${x.getUserInfo()}</h1>`);
+       
+    </script>
+    
+</body>
+</html>

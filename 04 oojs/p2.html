@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> Functions,Arrays and Objects as properties</h3>
+    <script>
+        var users = {
+            name : "krishna",
+            email : "krishna12@gmail.com",
+            hobbies : ['cycling','riding','driving'],
+            getName : function(){
+                document.write(`<h1> My name is ${this.name} <h1>`);
+
+            },
+            getEmail : function(){
+                document.write(`<h1> My email is ${this.email} </h1>`);
+            },
+            address : {
+                city : "anatapur",
+                zip : 511001
+            }
+        };
+
+        document.write(`<h1> object = ${users.name} </h1>`);
+        document.write(`<h1> hobbies = ${users['hobbies']} </h1>`);
+
+        users.getEmail();
+        users.getName();
+
+        document.write(`<h1> adress city is ${users.address.city} </h1>`);
+        document.write(`<h1> adress zip ${users['address']['zip']} </h1>`);
+    </script>
+    
+</body>
+</html>

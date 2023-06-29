@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMASCRIPT</title>
+</head>
+<body>
+    <h1>Inheritance inside class</h1>
+    <script>
+        class Course {
+            constructor(){
+                this.title = 'Java Fullstack';
+                this.fee = 12345;
+            }
+            getCourseDetails(){
+                document.write(`<h1> course name = ${this.title} and fee is = ${this.fee} </h1>`);
+            }
+        }
+        class User extends Course {
+            constructor(x,y){
+                super(x,y);
+            
+            }
+        
+        }
+        let x = new Course();
+        x.getCourseDetails();
+        
+
+
+    </script>
+    
+</body>
+</html>

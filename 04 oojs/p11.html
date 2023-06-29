@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oojs</title>
+</head>
+<body>
+    <h1>Object.keys()</h1>
+
+    <script>
+        var user = {
+            name : "krishna",
+            email : "kkroyroyal12@gmail.com",
+            mobile : '8009088138',
+            age : 23
+        };
+
+        console.log('keys = ',Object.keys(user));
+         
+        for(let item of Object.keys(user)){
+            document.write(`<h1> ${item} </h1>`);
+        }
+    </script>
+    
+</body>
+</html>

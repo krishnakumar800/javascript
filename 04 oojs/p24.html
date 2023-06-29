@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oojs</title>
+</head>
+<body>
+    <h1>Class ES-6 => group of object (State and behavioural)
+    </h1>
+    <p> State => variables => properties</p>
+    <p>Behavioural => methods</p>
+
+    <script>
+
+        class User{
+            constructor(){
+                this.name = "krishna";
+                this.email = "kkroyroyal@gmail.com";
+                document.write(`<h1> this is constructor method </h1>`);
+            }
+
+            display(){
+                document.write(`<h1> name is ${this.name} </h1>`);
+
+            }
+            print(){
+                document.write(`<h1> email is ${this.email} </h1>`);
+            }
+        }
+
+        let x = new User();
+    
+        console.log('x=',x);
+        document.write(`</h1> name is ${x.name} </h1>`);
+        document.write(`</h1> email is ${x.email} </h1>`);
+
+        x.display();
+        x.print();
+
+      
+    </script>
+    
+</body>
+</html>

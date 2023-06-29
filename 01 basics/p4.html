@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4> logical operators</h4>
+
+    <script>
+        var x = prompt('enter the marks ?');
+
+        var marks = Number(Math.abs(x));
+
+        if(marks < 35){
+            document.write(`<h1> marks = ${marks} fail </h1>`);
+
+        }else if (marks == 35){
+            document.write(`<h1> marks = ${marks} just pass </h1>`);
+        } else if ( marks > 35 && marks < 60){
+            document.write(`<h1> marks = ${marks} second </h1>`);
+
+        }else if (marks >=60 && marks<85){
+            document.write(`<h1> marks = ${marks} first </h1>`);
+        }else if (marks >=85 && marks <=100){
+            document.write(`<h1> marks = ${marks} first with distinction </h1>`);
+        }else{
+            document.write(`<h1> check your input </h1>`);
+        }
+        
+    </script>
+
+  
+</body>
+</html>

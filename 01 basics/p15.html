@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> array using constructor parameters</h2>
+   <script>
+    var colors = new Array("blue","green","yellow","red");
+
+    var phone = ['+778128878013948','890184013480','-03912998878','73888793893'];
+
+    console.log('array constructor parameters',colors);
+
+    colors.forEach(function(x,index){
+        document.write(`<h1> ${index} ${x} </h1>`);
+    });
+
+    phone.forEach(function(y,index){
+        document.write(`<h1> ${index} ${y} </h1>`);
+    });
+   </script>
+    
+</body>
+</html>

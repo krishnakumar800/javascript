@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1> Inheritanace inside class</h1>
+
+   <script>
+    class Course{   // super class
+        constructor(ti,fe){
+            this.title = ti;
+            this.fee = fe;
+        }
+        getCourseDetails(){
+            document.write(`<h3> couse name = ${this.title} and fee =  ${this.fee} </h3>`);
+        }
+    }
+    class User extends Course { // base class
+        constructor(x,y){
+            super(x,y);
+        }
+    }
+
+    let x = new User("mern",1234)
+    x.getCourseDetails();
+    
+   </script>
+</body>
+</html>

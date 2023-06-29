@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #block {
+            background-color: teal;
+            color: azure;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .person{
+            background-color: orangered;
+            color: azure;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> DOM - Document Object Model -> to target the id attributes</h1>
+    <div id="block"></div>
+    <div class="person"></div>
+    <h1 id="title"></h1>
+    <button id="btn"></button>
+
+    <script>
+        document.write(`<h1> the sample javascript statement </h1>`);
+
+        document.write(`<h1> the sample javascript statement </h1>`);
+
+        document.getElementById('block').innerHTML = " my custon text ";
+        document.getElementById('title').innerText = "javascript inner text";
+        document.getElementById('title').style.color = "deeppink";
+        document.getElementById('title').style.backgroundColor = "gold";
+
+        document.getElementById('btn').innerText = "click me to login";
+
+        document.querySelector('.person').textContent = "<h1> welcome to my class person</h1>";
+    </script>
+   
+    
+</body>
+</html>
